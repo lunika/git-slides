@@ -106,6 +106,59 @@
                 </p>
             </section>
         </section>
+        <section>
+            <section>
+                <h2>Configuration</h2>
+            </section>
+            <section>
+                <h3>git config</h3>
+                <pre>
+                    <code data-trim>
+$ git config --global user.name "Manuel Raynaud"
+$ git config --global user.email "raynaud.manu@gmail.com"
+$ git config --global alias.ci "commit"
+$ git config --global alias.co "checkout"
+$ git config --global alias.st "status"
+$ git config --global core.editor "vim"
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <h3>fichier ~/.gitconfig</h3>
+                <pre>
+                    <code data-trim>
+[user]
+    name = Manuel Raynaud
+    email = raynaud.manu@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[alias]
+    ci = commit
+    co = checkout
+    st = status
+    br = branch
+    merge = me
+[core]
+    editor = vim
+[push]
+    default = simple
+                    </code>
+                </pre>
+            </section>
+
+        </section>
+        <section>
+            <h2>Création d'un projet</h2>
+            <pre>
+                <code data-trim>
+$ mkdir myProject
+$ cd myProject
+$ git init
+                </code>
+            </pre>
+        </section>
     </div>
 
 </div>
