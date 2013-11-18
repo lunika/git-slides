@@ -107,6 +107,10 @@
             </section>
         </section>
         <section>
+            <h2>plusieurs états</h2>
+            <img src="custom/img/file-lifecycle.png">
+        </section>
+        <section>
             <section>
                 <h2>Configuration</h2>
             </section>
@@ -158,6 +162,79 @@ $ cd myProject
 $ git init
                 </code>
             </pre>
+        </section>
+        <section>
+            <section>
+                <h2>Commit</h2>
+                <p>
+                    Le commit intervient le plus tôt possible
+                </p>
+            </section>
+            <section>
+                <p>
+                    création d'un nouveau fichier et intégration au dépôt
+                </p>
+                <pre>
+                    <code data-trim>
+$ touch Readme.md                       //untracked
+$ git add Readme.md                     //staged
+$ git commit -m "create readme file"    //commited
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <p>
+                    Modification d'un fichier et commit
+                </p>
+                <pre>
+                    <code data-trim>
+$ echo "Hello World!" > Readme.md           //unstaged
+$ git add Readme.md                         //staged
+$ git commit -m "implement readme file"     //commited
+                    </code>
+                </pre>
+                <pre>
+                    <code data-trim>
+$ echo "Hello World!" > Readme.md           //unstaged
+$ git commit -am "implement readme file"     //commit all
+                    </code>
+                </pre>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Branches</h2>
+            </section>
+            <section>
+                <p>Création d'une branche</p>
+                <pre>
+                    <code data-trim>
+$ git branch ma_branche
+                    </code>
+                </pre>
+                <p>Visualiser toutes ses branches locales</p>
+                <pre>
+                    <code data-trim>
+$ git branch
+  caching
+  content
+  frontend
+  http_caching
+* master
+  refactor_action
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <p>Passer d'une branche à une autre</p>
+                <pre>
+                    <code data-trim>
+$ git checkout ma_branche
+                    </code>
+                </pre>
+                <p>Attention, checkout ne sert pas qu'à changer de branche.</p>
+            </section>
+
         </section>
     </div>
 
