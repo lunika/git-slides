@@ -234,7 +234,48 @@ $ git checkout ma_branche
                 </pre>
                 <p>Attention, checkout ne sert pas qu'à changer de branche.</p>
             </section>
+            <section>
+                <p>merge d'une branche dans une autre</p>
+                <pre>
+                    <code data-trim>
+$ git checkout master
+$ git merge ma-branche
+                    </code>
+                </pre>
+            </section>
 
+        </section>
+        <section>
+            <h3>Partageons notre travail</h3>
+            <p>
+                <i>Et tu pull pull pull ce code qui te plaît<br>
+                Et tu push push push c'est ta façon d'partager</i>
+            </p>
+        </section>
+        <section>
+            <h3>Tracker une branche distante</h3>
+            <pre>
+                <code data-trim>
+$ git branch --track {branche-locale} origin/{branche-distante}
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h3>récupérer un travail sur une branche trackée</h3>
+            <pre>
+                <code data-trim>
+$ git pull
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Poussons notre travail</h3>
+            <pre>
+                <code data-trim>
+$ git push origin <branch-distante>
+                </code>
+            </pre>
+            <p>Avec la même commande on crée une branche distante si elle n'existe pas encore</p>
         </section>
     </div>
 
