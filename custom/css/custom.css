@@ -1,0 +1,6 @@
+.reveal section img {
+    border: transparent;
+}
+
+.reveal section .note {
+    font-size: 0.5em; }
