@@ -153,6 +153,7 @@ $ git config --global core.editor "vim"
             </section>
 
         </section>
+
         <section>
             <h2>Création d'un projet</h2>
             <pre>
@@ -246,38 +247,39 @@ $ git merge ma-branche
 
         </section>
         <section>
-            <h3>Partageons notre travail</h3>
-            <p>
-                <i>Et tu pull pull pull ce code qui te plaît<br>
-                Et tu push push push c'est ta façon d'partager</i>
-            </p>
+            <section>
+                <h3>Partageons notre travail</h3>
+                <p>
+                    <i>Et tu pull pull pull ce code qui te plaît<br>
+                    Et tu push push push c'est ta façon d'partager</i>
+                </p>
+            </section>
+            <section>
+                <h3>Tracker une branche distante</h3>
+                <pre>
+                    <code data-trim>
+    $ git branch --track {branche-locale} origin/{branche-distante}
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <h3>récupérer un travail sur une branche trackée</h3>
+                <pre>
+                    <code data-trim>
+    $ git pull
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Poussons notre travail</h3>
+                <pre>
+                    <code data-trim>
+    $ git push origin {branche-distante}
+                    </code>
+                </pre>
+                <p>Avec la même commande on crée une branche distante si elle n'existe pas encore</p>
+            </section>
         </section>
-        <section>
-            <h3>Tracker une branche distante</h3>
-            <pre>
-                <code data-trim>
-$ git branch --track {branche-locale} origin/{branche-distante}
-                </code>
-            </pre>
-        </section>
-        <section>
-            <h3>récupérer un travail sur une branche trackée</h3>
-            <pre>
-                <code data-trim>
-$ git pull
-                </code>
-            </pre>
-        </section>
-        <section>
-            <h3>Poussons notre travail</h3>
-            <pre>
-                <code data-trim>
-$ git push origin {branche-distante}
-                </code>
-            </pre>
-            <p>Avec la même commande on crée une branche distante si elle n'existe pas encore</p>
-        </section>
-
         <section>
             <h2>Ressources</h2>
             <p>
