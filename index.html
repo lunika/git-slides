@@ -155,7 +155,11 @@ $ git config --global core.editor "vim"
         </section>
 
         <section>
+            <section>
             <h2>Création d'un projet</h2>
+            </section>
+            <section>
+            <p>création d'un projet inexistant</p>
             <pre>
                 <code data-trim>
 $ mkdir myProject
@@ -163,6 +167,19 @@ $ cd myProject
 $ git init
                 </code>
             </pre>
+            </section>
+            <section>
+                <p>Création d'un projet existant</p>
+                <pre>
+                    <code data-trim>
+$ git clone https://github.com/thelia/thelia.git thelia
+$ cd thelia
+                    </code>
+                </pre>
+                <p>
+                    git supporte plusieurs protocoles : http(s), ssh, git
+                </p>
+            </section>
         </section>
         <section>
             <section>
@@ -200,6 +217,20 @@ $ echo "Hello World!" > Readme.md           //unstaged
 $ git commit -am "implement readme file"     //commit all
                     </code>
                 </pre>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>TAG</h1>
+                <p class="note"><i>le tag parfait ?</i></p>
+            </section>
+            <section>
+                <p>Un tag est un label sur un commit</p>
+                <img src="custom/img/tag.jpg">
+                <p>
+                    un numéro de commit ressemble à ça : <br>
+                    fbc3b740b1a3b50cb8d2f15a2abd2126f6ea173a
+                </p>
             </section>
         </section>
         <section>
